@@ -26,7 +26,7 @@ class Solution
         for(int i=0;i<n-1;i++){
             
             // cheking the consecutive letters, checking (i,i+1)th index and (i-1,i)th index
-            if( bordercheck(word[i],word[i+1])||bordercheck(word[i-1],word[i])){
+            if( bordercheck(word[i],word[i+1])){
                 
                 //removing the pairs from the word
                 word.erase(i,2);
